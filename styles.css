@@ -119,7 +119,7 @@ h2{font-family:"Syne",sans-serif;font-weight:700;font-size:clamp(2.6rem,7vw,6rem
 
 /* reveals + hero intro */
 .js .reveal{opacity:0;transform:translateY(28px)}
-.is-in{opacity:1;transform:none;transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.js .reveal.is-in{opacity:1;transform:none;transition:opacity 1s var(--ease),transform 1s var(--ease)}
 .js .hero-title .line>span{transform:translateY(110%);transition:transform 1.2s var(--ease)}
 .hero.loaded .hero-title .line>span{transform:translateY(0)}
 .hero.loaded .reveal{opacity:1;transform:none;transition:opacity 1s var(--ease),transform 1s var(--ease)}
