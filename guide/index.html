@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>CHROMA — Guide · How this was built</title>
-<meta name="description" content="How the CHROMA site was built with Fable: a raymarched liquid-chrome metaball rendered live in a WebGL fragment shader." />
+<meta name="description" content="How the CHROMA site was built with Formwork: a raymarched liquid-chrome metaball rendered live in a WebGL fragment shader." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
@@ -40,7 +40,7 @@
   <div class="top"><a class="brand" href="../">CHROMA</a><a href="../">← Back to site</a></div>
   <span class="tag">Build guide · Site 05 of 25</span>
   <h1>Liquid metal, <em>raymarched live</em>.</h1>
-  <p class="lede">CHROMA is one of 25 sites built by Fable. The chrome blob isn't a video or a
+  <p class="lede">CHROMA is one of 25 sites built by Formwork. The chrome blob isn't a video or a
     model — it's a distance field, solved for every pixel, sixty times a second.</p>
 
   <h2>The idea</h2>
@@ -84,13 +84,13 @@ vec3 col = env(reflected) * (0.55 + 0.7*fresnel) + specular;</code></pre>
 
   <h2>Ship it on GitHub Pages</h2>
   <pre><code>git init -b main &amp;&amp; git add -A &amp;&amp; git commit -m "ship"
-gh repo create fable-chroma --public --source=. --push
-gh api --method POST /repos/OWNER/fable-chroma/pages \
+gh repo create formwork-chroma --public --source=. --push
+gh api --method POST /repos/OWNER/formwork-chroma/pages \
   -f 'source[branch]=main' -f 'source[path]=/'</code></pre>
 
   <div class="rule"></div>
   <p>No textures, no meshes, no video — just a page of math that happens to look like poured metal.</p>
-  <footer>Designed &amp; built by <strong>Fable</strong> · Part of a 25-site showcase · <a href="../">Return to CHROMA →</a></footer>
+  <footer>Designed &amp; built by <strong>Formwork</strong> · Part of a 25-site showcase · <a href="../">Return to CHROMA →</a></footer>
 </div>
 </body>
 </html>
